@@ -1,9 +1,8 @@
-# TI TM4C129 platform configuration options
+# TI AM62X platform configuration options
 # SPDX-License-Identifier: Apache-2.0
 
 config SOC_TI_AM62X
 	bool
-
 
 /*
 # TI LM3S6965 platform configuration options
