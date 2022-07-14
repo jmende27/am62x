@@ -1,0 +1,14 @@
+identifier: am62x_evm
+name: AM62x EVM
+type: mcu
+arch: arm
+toolchain:
+  - zephyr
+  - gnuarmemb
+  - xtools
+supported:  # depends what we are planning to support
+  - netif:wifi
+  - i2c
+  - gpio
+  - adc
+  - watchdog

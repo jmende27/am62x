@@ -1,0 +1,7 @@
+# TI SimpleLink CC3220SF LaunchXL Board
+
+# SPDX-License-Identifier: Apache-2.0
+
+config BOARD_AM62X_EVM
+	bool "TI AM62X EVM"
+	depends on SOC_TI_AM62X
