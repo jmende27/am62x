@@ -19,6 +19,11 @@ API Changes
 Changes in this release
 =======================
 
+* Changed :c:struct:`spi_cs_control` to remove anonymous struct.
+  This causes possible breakage for static initialization of the
+  struct.  Updated :c:macro:`SPI_CS_CONTROL_PTR_DT` to reflect
+  this change.
+
 Removed APIs in this release
 ============================
 
@@ -37,6 +42,12 @@ Removed APIs in this release
   * ``k_delayed_work_expires_ticks()``
   * ``k_delayed_work_remaining_ticks()``
   * ``K_DELAYED_WORK_DEFINE``
+
+* Removed support for enabling passthrough mode on MPU9150 to
+  AK8975 sensor.
+
+* Removed deprecated SPI :c:struct:`spi_cs_control` fields for GPIO management
+  that have been replaced with :c:struct:`gpio_dt_spec`.
 
 Deprecated in this release
 ==========================

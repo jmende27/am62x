@@ -62,7 +62,7 @@ manifest:
       groups:
         - hal
     - name: hal_espressif
-      revision: 7c24ff5651bd6344b3e5ac4bee420f27c7cc591a
+      revision: 42ce90fa07cb696ebee65441f9f7d468032575d7
       path: modules/hal/espressif
       west-commands: west/west-commands.yml
       groups:
@@ -194,7 +194,7 @@ manifest:
       revision: 8d53544871e1f300c478224faca6be8384ab0d04
       path: modules/lib/open-amp
     - name: openthread
-      revision: 4a8ba0b04369380c39d3ff9ec15df8e8ebd3d5cc
+      revision: b21e99b4b3d823f71c902b9174ff62b964c124f0
       path: modules/lib/openthread
     - name: picolibc
       path: modules/lib/picolibc
