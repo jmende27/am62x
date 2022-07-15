@@ -7,8 +7,6 @@ toolchain:
   - gnuarmemb
   - xtools
 supported:  # depends what we are planning to support
-  - netif:wifi
-  - i2c
-  - gpio
-  - adc
-  - watchdog
+  - uart
+  - systick
+  - nvic

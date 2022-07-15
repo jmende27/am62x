@@ -7,8 +7,4 @@ if BOARD_TI_AM62X_EVM
 config BOARD
 	default "am62x_evm"
 
-config I2C_AM62X
-	default y
-	depends on I2C
-
 endif # BOARD_AM62X_EVM
