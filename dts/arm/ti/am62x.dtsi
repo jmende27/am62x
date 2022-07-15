@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: Apache-2.0 */
 
+#include <mem.h>
 #include <arm/armv7-m.dtsi>
-
 #include <zephyr/dt-bindings/i2c/i2c.h>
 #include <zephyr/dt-bindings/gpio/gpio.h>
 
@@ -23,12 +23,9 @@
                 };
         };
 
-        sram0: memory@80000000 {
+        sram0: memory@0 {
                 compatible = "mmio-sram"; //Not sure about this
-        };
-
-	flash0: serial-flash@0 {
-                compatible = "serial-flash";
+		reg = <0x0 DT_SIZE_K(256)>;
         };
 
         sysclk: system-clock {
@@ -51,4 +48,5 @@
 };
 
 &nvic {
-        arm,num-irq-priority-bits = <3
+        arm,num-irq-priority-bits = <3>;
+};
