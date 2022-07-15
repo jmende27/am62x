@@ -2,7 +2,6 @@
 
 /dts-v1/;
 
-/* TODO in dts/arm/ti */
 #include <ti/am62x.dtsi>
 
 / {
@@ -14,9 +13,10 @@
         };
 
         chosen {
-                zephyr,sram = &sram0;
                 zephyr,console = &uart0;
                 zephyr,shell-uart = &uart0;
+		zephyr,flash = &flash0;
+		zephyr,sram = &sram0;
         };
 };
 
@@ -24,5 +24,3 @@
 	status = "okay";
 	current-speed = <115200>;
 };
-
-
